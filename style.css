@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Brandon grotesque regular";
+  src: url('./brand_ssv/Brandon_reg.otf');
+}
+
+@font-face {
+  font-family: "Brandon grotesque med";
+  src: url("./brand_ssv/Brandon_med.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,14 +28,16 @@ html {
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Brandon grotesque med";
   color: var(--grey-accent);
   overflow-x: hidden;
+  background-color: rgb(208, 228, 246);
 }
 
 p {
   color: var(--color-white);
-  font-size: 1.3rem;
+  font-family: "Brandon grotesque regular";
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -48,7 +60,6 @@ p {
   height: 40rem;
   margin: auto;
   background-color: var(--color-white);
-  outline: 1px solid var(--grey-accent);
 }
 
 .front > *,
@@ -146,6 +157,17 @@ h2 {
   letter-spacing: .7rem;
 }
 
+.qr-code {
+  height: 7.5rem;
+  width: 7.5rem;
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+  border: 3px solid var(--red-accent);
+  border-radius: 2px;
+  outline: 3px solid var(--grey-accent);
+}
+
 /* Back side */
 
 .back__box-1, 
@@ -212,7 +234,7 @@ h2 {
 }
 
 .contacts-top {
-  top: 10%;
+  top: 9%;
 }
 
 .contacts-bottom {
@@ -241,7 +263,7 @@ h2 {
   width: 1.8rem;
   height: 1.8rem;
   top: 55%;
-  right: 1.5rem;
+  right: 1.6rem;
   transform: translate(75%, -60%);
 }
 
